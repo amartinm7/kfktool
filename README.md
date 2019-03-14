@@ -31,6 +31,8 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 https://www.npmjs.com/package/kafka-node
 
 
+https://www.w3schools.com/css/css_grid_item.asp
+https://learncssgrid.com/
 
 
 

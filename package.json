@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "kafka-node": "^4.0.2",
+    "should": "^13.2.3",
     "vue": "^2.6.6"
   },
   "devDependencies": {

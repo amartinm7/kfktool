@@ -1,5 +1,14 @@
 <template>
   <div class="hello">
+    <div class="grid-container">
+      <div class="grid-item"> hi </div>
+      <div class="grid-item"> hello</div>
+      <div class="grid-item"> world</div>
+      <div class="grid-item"> say</div>
+      <div class="grid-item"> hello</div>
+      <div class="grid-item"> say</div>
+      <div class="grid-item-1to2"> hello</div>
+    </div>
     <ul v-for="item in groceryList" v-bind:key="item.id">
       <li> {{item.text}}</li>
     </ul>
@@ -40,6 +49,27 @@ export default {
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
+<style>
+
+  .grid-container {
+    display: grid;
+    grid-column-gap: 0.5em;
+    grid-row-gap: 0.5em;
+    background-color: coral;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 10em auto;
+    align-content: center;
+  }
+
+  .grid-item{
+    border: 1em solid cadetblue;
+    text-align: center;
+  }
+
+  .grid-item-1to2{
+    border: 1em solid darkgoldenrod;
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
 
 </style>
